@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embed Chat Widget in HTML</title>
+
+    <!-- Embedding the JavaScript file -->
+    <script src="./chat-widget.js"></script>
+  </head>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      /* list-style: none; */
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #fff;
+      margin-bottom: 5px;
+      padding: 5px;
+      /* border-bottom: 1px solid #ddd; */
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 10px 20px;
+    }
+
+    .list-title {
+      color: #333;
+      margin: 20px 0;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>Altitude Chat Widget (Account)</h1>
+    </header>
+
+    <div class="container">
+      <p>This is a simple HTML page to test our chat widget</p>
+
+      <p>
+        This widget is created for account dev.roxwin.com, property Park Hotel
+        Demo
+      </p>
+
+      <p>
+        To Config UI of this widget
+        <a
+          target="_blank"
+          href="https://alt-admin.dev.altitudehq.com/omnichannel/config/widget#setup"
+          >Visit this link</a
+        >
+      </p>
+
+      <span class="list-title">UI elements could be configured:</span>
+      <ul>
+        <li>Chat title</li>
+        <li>Brand logo</li>
+        <li>Brand theme color</li>
+        <li>Ask email before chat</li>
+        <li>Welcome message</li>
+        <li>Show agent typing</li>
+        <li>Show agent name</li>
+        <li>Show agent read message or not</li>
+        <li>Show notification and sound when guest's chat is not active tab</li>
+      </ul>
+
+      <p>After change UI config, reload this page or it will polling and auto apply latest config each 1 minutes</p>
+
+      <p>
+        To config which sites can embed this widget
+        <a
+          target="_blank"
+          href="https://alt-admin.dev.altitudehq.com/omnichannel/config/widget#code"
+          >Visit this link</a
+        >
+      </p>
+
+      <a href="other-page.html" class="button">Go to Other Page</a>
+    </div>
+
+    <chat-widget id="6295d84c14035000302382ab"></chat-widget>
+  </body>
+</html>
